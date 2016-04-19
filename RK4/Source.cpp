@@ -176,13 +176,8 @@ int main() {
 
 void integrator(double& x, double& y, double& h, double& xend) {
 
-//	while (true) {
-
 		if (xend - x < h) h = xend - x;
 		y = rk4(x, y, h);
-//		if (x >= xend) break;
-
-//	}
 
 }
 
